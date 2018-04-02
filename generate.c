@@ -128,7 +128,7 @@ void main(int argc, char *argv)
          exit(-1);
     }
     char url[400];
-    sprintf(url,"%s/blob/master/license-ncu?raw=tru",indata[0]);
+    sprintf(url,"%s/blob/master/%s?raw=tru",indata[0],indata[1]);
     fprintf(fd,"%s\n",url);
     for(j=1;j<i;j++)
        fprintf(fd,"%s\n",indata[j]);
